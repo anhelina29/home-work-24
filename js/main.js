@@ -58,7 +58,8 @@ class SkillsManager {
 
   addSkill(skill) {
     if (typeof skill === 'string' && skill.length >= 2) {
-      return this.skills.push(skill)
+      this.skills.push(skill)
+      return skill
     }
       return null
   }
